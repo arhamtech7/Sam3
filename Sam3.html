@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dr. Amna Malik | Consultant Physician & GP</title>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --pakistan-green: #006a4e;
+            --gold-accent: #c5a059;
+            --off-white: #fcfcfc;
+            --dark-grey: #2d3436;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: var(--off-white);
+            color: var(--dark-grey);
+            line-height: 1.6;
+        }
+
+        /* Top Bar for Urgent Info */
+        .top-info {
+            background: var(--pakistan-green);
+            color: white;
+            padding: 10px 5%;
+            font-size: 0.85rem;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        /* Navigation */
+        nav {
+            padding: 20px 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: white;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .logo h2 {
+            font-family: 'Merriweather', serif;
+            color: var(--pakistan-green);
+            font-size: 1.4rem;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 30px;
+            list-style: none;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: var(--dark-grey);
+            font-weight: 500;
+            transition: 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: var(--pakistan-green);
+        }
+
+        /* Hero Section */
+        .hero {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 80px 5%;
+            background: linear-gradient(to right, #ffffff 50%, #f0f7f4 50%);
+        }
+
+        .hero-content {
+            flex: 1;
+            padding-right: 50px;
+        }
+
+        .hero-content h1 {
+            font-family: 'Merriweather', serif;
+            font-size: 3rem;
+            color: var(--pakistan-green);
+            margin-bottom: 20px;
+        }
+
+        .badge {
+            background: var(--gold-accent);
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            font-weight: 600;
+        }
+
+        /* Credentials Section */
+        .credentials {
+            padding: 60px 5%;
+            background: white;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            text-align: center;
+        }
+
+        .cred-item {
+            border-right: 1px solid #eee;
+        }
+
+        .cred-item:last-child { border: none; }
+
+        .cred-item h4 { color: var(--gold-accent); font-size: 1.5rem; }
+
+        /* Services Grid */
+        .services {
+            padding: 100px 5%;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+
+        .section-title h2 {
+            font-family: 'Merriweather', serif;
+            font-size: 2.2rem;
+            color: var(--pakistan-green);
+        }
+
+        .service-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        .service-card {
+            background: white;
+            padding: 40px;
+            border-radius: 15px;
+            transition: 0.4s;
+            border-bottom: 4px solid transparent;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+        }
+
+        .service-card:hover {
+            transform: translateY(-10px);
+            border-color: var(--pakistan-green);
+        }
+
+        .service-card h3 {
+            margin-bottom: 15px;
+            color: var(--pakistan-green);
+        }
+
+        /* Location Section */
+        .locations {
+            padding: 80px 5%;
+            background: #f0f7f4;
+        }
+
+        .location-box {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .btn-book {
+            background: var(--pakistan-green);
+            color: white;
+            padding: 12px 25px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: 600;
+        }
+
+        /* Footer */
+        footer {
+            background: var(--dark-grey);
+            color: white;
+            padding: 60px 5%;
+            text-align: center;
+        }
+
+        @media (max-width: 768px) {
+            .hero { flex-direction: column; text-align: center; background: white; }
+            .hero-content { padding-right: 0; margin-bottom: 40px; }
+            .nav-links { display: none; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="top-info">
+        <span>PMC Registered: 12345-P</span>
+        <span>Contact: +92 300 1234567</span>
+    </div>
+
+    <nav>
+        <div class="logo">
+            <h2>Dr. Amna Malik</h2>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#locations">Clinics</a></li>
+            <li><a href="#contact" style="color: var(--gold-accent)">Urgent Care</a></li>
+        </ul>
+    </nav>
+
+    <section class="hero">
+        <div class="hero-content">
+            <span class="badge">Consultant Physician</span>
+            <h1>Comprehensive Health for your Family.</h1>
+            <p>Specializing in preventive medicine, maternal health, and chronic disease management with a focus on Pakistani community wellbeing.</p>
+            <div style="margin-top: 30px;">
+                <a href="#locations" class="btn-book">Book Appointment</a>
+            </div>
+        </div>
+        <div class="hero-image">
+            <div style="width: 350px; height: 450px; background: #d1e2da; border-radius: 30px 30px 30px 0; display: flex; align-items: center; justify-content: center; color: #5a8d75;">
+                [Professional Image]
+            </div>
+        </div>
+    </section>
+
+    <section class="credentials">
+        <div class="cred-item">
+            <h4>MBBS, FCPS</h4>
+            <p>Medicine Specialist</p>
+        </div>
+        <div class="cred-item">
+            <h4>12+ Years</h4>
+            <p>Clinical Experience</p>
+        </div>
+        <div class="cred-item">
+            <h4>15k+</h4>
+            <p>Patients Treated</p>
+        </div>
+        <div class="cred-item">
+            <h4>Agha Khan Uni</h4>
+            <p>Alumnus</p>
+        </div>
+    </section>
+
+    <section id="services" class="services">
+        <div class="section-title">
+            <h2>Expertise & Services</h2>
+            <p>Providing specialized care for local health challenges.</p>
+        </div>
+        <div class="service-grid">
+            <div class="service-card">
+                <h3>Chronic Disease</h3>
+                <p>Management of Diabetes (Sugar), Hypertension (High BP), and Cholesterol using global guidelines.</p>
+            </div>
+            <div class="service-card">
+                <h3>Infectious Diseases</h3>
+                <p>Expert diagnosis and treatment for Typhoid, Dengue, Malaria, and seasonal respiratory infections.</p>
+            </div>
+            <div class="service-card">
+                <h3>Maternal Health</h3>
+                <p>Post-natal care and general wellness consultations for women and children.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="locations" class="locations">
+        <div class="section-title">
+            <h2>Clinic Locations</h2>
+        </div>
+        <div class="location-box">
+            <div>
+                <h3>City Medical Complex</h3>
+                <p>Gulberg III, Lahore | Mon - Wed (5pm - 8pm)</p>
+            </div>
+            <a href="tel:+923001234567" class="btn-book">Call Clinic</a>
+        </div>
+        <div class="location-box">
+            <div>
+                <h3>The Family Clinic</h3>
+                <p>DHA Phase 5, Karachi | Thu - Sat (6pm - 9pm)</p>
+            </div>
+            <a href="tel:+923001234567" class="btn-book">Call Clinic</a>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Dr. Amna Malik | MBBS, FCPS (Internal Medicine)</p>
+        <p style="font-size: 0.8rem; margin-top: 10px; color: #999;">Member of Pakistan Medical Association</p>
+    </footer>
+
+</body>
+</html>
